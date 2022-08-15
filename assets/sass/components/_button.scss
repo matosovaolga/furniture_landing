@@ -1,0 +1,21 @@
+.btn {
+	cursor: pointer;
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 25px 72px;
+	gap: 10px;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $main-color;
+	font-weight: 700;
+	font-size: $main-font-size + 2px;
+	line-height: 20px;
+	align-self: flex-start;
+
+	&-rounded {
+		border-radius: 50px;
+
+	}
+}

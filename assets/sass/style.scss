@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import "base/_variables";
+
+@import "base/_default";
+@import "mixins/_mixins";
+@import "mixins/_mediaquery";
+@import "components/_button";
+@import "modules/_header";
+@import "modules/_hero_slider";
+@import "modules/_benefits";
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}

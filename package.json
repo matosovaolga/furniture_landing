@@ -1,0 +1,35 @@
+{
+	"name": "furniture_landing",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/matosovaolga/furniture_landing.git"
+	},
+	"keywords": [
+		"landing",
+		"portfolio"
+	],
+	"author": "omatosova",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/matosovaolga/furniture_landing/issues"
+	},
+	"homepage": "https://github.com/matosovaolga/furniture_landing#readme",
+	"devDependencies": {
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-livereload": "^4.0.2",
+		"gulp-sass": "^5.1.0",
+		"gulp-uglify": "^3.0.2",
+		"sass": "^1.54.4"
+	},
+	"dependencies": {
+		"gulp": "^4.0.2"
+	},
+	"description": ""
+}
