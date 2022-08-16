@@ -1,0 +1,19 @@
+.mailing-container {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.field-container {
+	position: relative;
+	display: block;
+
+	.btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}

@@ -1,0 +1,19 @@
+.image-mask {
+	overflow: hidden;
+	flex: 1;
+
+	img {
+		object-fit: cover;
+		max-height: 100%;
+	}
+
+	&.left {
+		border-top-left-radius: 50px;
+		margin-top: 50px;
+	}
+
+	&.right {
+		border-bottom-right-radius: 50px;
+		margin-top: 50px;
+	}
+}

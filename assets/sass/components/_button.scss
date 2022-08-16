@@ -10,12 +10,12 @@
 	color: $white;
 	background-color: $main-color;
 	font-weight: 700;
-	font-size: $main-font-size + 2px;
+	font-size: $main-font-size;
 	line-height: 20px;
 	align-self: flex-start;
+	font-family: $main-fontfamily;
 
 	&-rounded {
 		border-radius: 50px;
-
 	}
 }

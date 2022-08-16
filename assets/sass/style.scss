@@ -5,12 +5,60 @@
 @import "mixins/_mixins";
 @import "mixins/_mediaquery";
 @import "components/_button";
+@import "components/_inputField";
+@import "components/_image-mask";
 @import "modules/_header";
 @import "modules/_hero_slider";
 @import "modules/_benefits";
+@import "modules/_promo_gallery";
+@import "modules/_single-promo";
+@import "modules/_htw";
+@import "modules/_mailingForm";
+@import "modules/_footer";
+
 
 .container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h3-title {
+	font-weight: 700;
+	font-size: $main-font-size + 8px;
+	line-height: 29px;
+}
+
+.section {
+	padding: 47px;
+	font-family: $main-fontfamily;
+
+	&.gray-bg {
+		background-color: $background-grey;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&-title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 39px;
+		color: $second-font-color;
+	}
+
+	&-subtitle {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		color: $main-font-color;
+	}
 }

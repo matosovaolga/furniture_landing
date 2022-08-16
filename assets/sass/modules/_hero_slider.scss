@@ -1,7 +1,13 @@
 .hero_slider {
 	background-image: url('../images/hero-slider.jpg');
-	height: calc(100vh - 122px);
+	background-size: cover;
 	position: relative;
+	font-family: $main-fontfamily;
+
+	.container {
+		position: relative;
+		height: calc(100vh - 122px);
+	}
 
 	&_message {
 		position: absolute;
@@ -16,7 +22,7 @@
 		gap: 20px;
 		max-width: 50%;
 		font-weight: 500;
-		font-size: $main-font-size + 4px;
+		font-size: $main-font-size + 2px;
 		line-height: 39px;
 	}
 

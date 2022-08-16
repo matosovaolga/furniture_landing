@@ -1,0 +1,69 @@
+.footer {
+	background-color: $dark-blue;
+	color: $white;
+	font-family: $main-fontfamily;
+
+	&-left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 34px;
+	}
+
+	.insta-shop {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+		gap: 26px;
+
+
+		.insta-shop-items {
+			display: flex;
+			gap: 20px;
+		}
+	}
+
+	.ourMission {
+		display: flex;
+		flex-direction: column;
+		gap: 17px;
+	}
+
+	.container {
+		gap: 23px;
+	}
+
+	p {
+		color: $white;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 35px;
+	}
+}
+
+.socialLinks {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	&-list {
+		display: flex;
+		gap: 24px;
+
+		a {
+			svg {
+				fill: $white;
+				opacity: 0.8;
+				width: 25px;
+				height: 25px;
+				transition: opacity 0.25s ease-out;
+			}
+
+			&:hover {
+				svg {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
