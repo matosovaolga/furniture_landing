@@ -9,7 +9,15 @@
 	justify-content: space-between;
 	gap: 40px;
 
+	@include mq('tablet-small') {
+		flex-wrap: wrap;
+	}
+
 	.image-mask {
 		max-height: 434px;
+
+		@include mq('tablet-small') {
+			flex: auto;
+		}
 	}
 }

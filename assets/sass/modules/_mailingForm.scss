@@ -5,6 +5,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
+
+	@include mq('tablet-small') {
+		width: 95%;
+	}
 }
 
 .field-container {
@@ -15,5 +19,11 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+
+		@include mq('tablet-small') {
+			position: relative;
+			display: inline-block;
+			margin-top: 15px;
+		}
 	}
 }

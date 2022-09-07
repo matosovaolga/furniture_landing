@@ -1,0 +1,1 @@
+!function(){document.getElementsByTagName("html")[0].scrollIntoView({behavior:"smooth"});let e=document.getElementById("header");window.onscroll=()=>{120<document.body.scrollTop||120<document.documentElement.scrollTop?e.classList.add("sticky"):e.classList.remove("sticky")}}();

@@ -20,6 +20,10 @@
 		max-width: 450px;
 		margin: 0 10% 0 0;
 
+		@include mq('tablet-small') {
+			display: none;
+		}
+
 		&.image-mask.right {
 			margin-top: 0;
 		}

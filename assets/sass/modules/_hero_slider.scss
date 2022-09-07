@@ -24,6 +24,11 @@
 		font-weight: 500;
 		font-size: $main-font-size + 2px;
 		line-height: 39px;
+
+		@include mq('tablet-small') {
+			max-width: 95%;
+			right: 2.5%;
+		}
 	}
 
 	&_title {
@@ -33,5 +38,10 @@
 		font-size: 52px;
 		line-height: 65px;
 		color: $main-color;
+
+		@include mq('tablet-small') {
+			font-size: 42px;
+			line-height: 55px;
+		}
 	}
 }

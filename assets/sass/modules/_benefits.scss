@@ -2,10 +2,18 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include mq('tablet-small') {
+		flex-wrap: wrap;
+	}
+
 	&-item {
 		display: flex;
 		gap: 25px;
 		justify-content: space-between;
+
+		@include mq('tablet-small') {
+			width: 100%;
+		}
 	}
 
 
