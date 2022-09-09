@@ -14,8 +14,19 @@
 	line-height: 20px;
 	align-self: flex-start;
 	font-family: $main-fontfamily;
+	position: relative;
+	transition: all 0.5s ease-in;
+	top: 0;
+	box-shadow: none;
 
 	&-rounded {
 		border-radius: 50px;
+		transition: all 0.5s ease-in;
+	}
+
+	&:hover {
+		top: -10px;
+		box-shadow: rgb(1 5 3 / 40%) 0 6px 15px 3px;
+		background-color: darken($main-color, 10%);
 	}
 }
