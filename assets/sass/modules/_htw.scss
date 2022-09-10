@@ -19,13 +19,20 @@
 
 		}
 
+		&:hover {
+			.hw-image-number {
+				transform: translate(-50%, 0) rotate(360deg);
+			}
+		}
 	}
+
+
 
 	&-image-number {
 		position: absolute;
 		bottom: -45px;
 		left: 50%;
-		transform: translate(-50%, 0);
+		transform: translate(-50%, 0) rotate(0deg);
 		width: 90px;
 		height: 90px;
 		border-radius: 50%;
@@ -38,7 +45,7 @@
 		text-align: center;
 		line-height: 60px;
 		vertical-align: middle;
-
+		transition: all 0.5s ease-out;
 	}
 
 	&-list {

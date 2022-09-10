@@ -590,11 +590,14 @@ p {
   width: 100%;
   max-width: 100%;
 }
+.hw-image:hover .hw-image-number {
+  transform: translate(-50%, 0) rotate(360deg);
+}
 .hw-image-number {
   position: absolute;
   bottom: -45px;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0) rotate(0deg);
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -607,6 +610,7 @@ p {
   text-align: center;
   line-height: 60px;
   vertical-align: middle;
+  transition: all 0.5s ease-out;
 }
 .hw-list {
   display: flex;
