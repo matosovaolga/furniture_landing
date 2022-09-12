@@ -10,17 +10,14 @@
 		}
 	}
 
-	function openMenu() {
 
+
+	function openMenu() {
 		document.getElementById("menu").classList.toggle("show");
 		document.getElementById("humburger").classList.toggle("opened");
 	}
 
 	document.getElementById("humburger").addEventListener('click', openMenu);
 
-
-
 	// scroll animation
-
-
 })();

@@ -481,7 +481,7 @@ p {
 }
 
 .hero_slider {
-  background-image: url("../images/hero-slider.jpg");
+  background-image: url("../images/hero-slider.webp");
   background-size: cover;
   position: relative;
   font-family: "Montserrat", sans-serif;

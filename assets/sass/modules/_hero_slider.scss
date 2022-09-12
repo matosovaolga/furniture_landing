@@ -1,5 +1,5 @@
 .hero_slider {
-	background-image: url('../images/hero-slider.jpg');
+	background-image: url('../images/hero-slider.webp');
 	background-size: cover;
 	position: relative;
 	font-family: $main-fontfamily;
@@ -7,6 +7,7 @@
 	.container {
 		position: relative;
 		height: calc(100vh - 122px);
+
 	}
 
 	&_message {
