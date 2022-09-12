@@ -16,15 +16,30 @@
 		flex-direction: column;
 		gap: 26px;
 
+		@include mq('tablet-wide') {
+			flex: 1;
+		}
+
 		@include mq('tablet-small') {
 			width: 100%;
 			flex: auto;
 		}
 
-
 		.insta-shop-items {
 			display: flex;
 			gap: 20px;
+
+			@include mq('tablet-wide') {
+				flex-wrap: wrap;
+
+				a {
+					flex: 1;
+
+					img {
+						max-width: 100%;
+					}
+				}
+			}
 
 			@include mq('tablet-small') {
 				flex-wrap: wrap;
@@ -48,7 +63,6 @@
 	}
 
 	.container {
-
 		gap: 23px;
 
 		@include mq('tablet-small') {

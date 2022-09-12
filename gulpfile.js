@@ -3,6 +3,7 @@ const cleanCSS = require('gulp-clean-css'),
 	livereload = require('gulp-livereload'),
 	sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
+const eslint = require('gulp-eslint');
 const pipeline = require('readable-stream').pipeline;
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
@@ -35,6 +36,8 @@ gulp.task('images', function () {
 gulp.task('scripts', function () {
 	return gulp.src(['assets/js/**/*.js'])
 		.pipe(concat('main.js'))
+		.pipe(eslint())
+		.pipe(eslint.format())
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist/js'));
 });

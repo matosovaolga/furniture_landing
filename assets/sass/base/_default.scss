@@ -235,4 +235,8 @@ p {
 	font-size: $main-font-size;
 	line-height: 39px;
 	color: $main-font-color;
+
+	@include mq('tablet-wide') {
+		line-height: 25px;
+	}
 }

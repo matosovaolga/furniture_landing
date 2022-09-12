@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import "base/_variables";
-
+@import "mixins/_mediaquery";
 @import "base/_default";
 @import "mixins/_mixins";
-@import "mixins/_mediaquery";
 @import "components/_button";
 @import "components/_inputField";
 @import "components/_image-mask";
@@ -37,6 +36,11 @@
 .section {
 	padding: 47px;
 	font-family: $main-fontfamily;
+	overflow: hidden;
+
+	@include mq('tablet-wide') {
+		padding: 40px 20px;
+	}
 
 	&.gray-bg {
 		background-color: $background-grey;
@@ -53,6 +57,10 @@
 		font-size: 32px;
 		line-height: 39px;
 		color: $second-font-color;
+
+		@include mq('tablet-small') {
+			font-size: 27px;
+		}
 	}
 
 	&-subtitle {

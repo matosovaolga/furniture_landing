@@ -6,6 +6,10 @@
 	flex-direction: column;
 	gap: 50px;
 
+	@include mq('tablet-wide') {
+		width: 80%;
+	}
+
 	@include mq('tablet-small') {
 		width: 95%;
 	}
@@ -20,7 +24,7 @@
 		right: 0;
 		top: 0;
 
-		@include mq('tablet-small') {
+		@include mq('tablet-wide') {
 			position: relative;
 			display: inline-block;
 			margin-top: 15px;

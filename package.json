@@ -30,7 +30,8 @@
 	},
 	"dependencies": {
 		"aos": "^2.3.4",
-		"gulp": "^4.0.2"
+		"gulp": "^4.0.2",
+		"gulp-eslint": "^6.0.0"
 	},
 	"description": ""
 }

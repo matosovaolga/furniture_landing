@@ -235,6 +235,11 @@ p {
   line-height: 39px;
   color: #666666;
 }
+@media only screen and (max-width: 1023px) {
+  p {
+    line-height: 25px;
+  }
+}
 
 .btn {
   cursor: pointer;
@@ -328,6 +333,12 @@ p {
 .header.sticky .burger-menu {
   top: 22px;
 }
+@media only screen and (max-width: 639px) {
+  .header.sticky .menu {
+    top: 82px;
+    height: calc(100vh - 82px);
+  }
+}
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -335,14 +346,23 @@ p {
 }
 @media only screen and (max-width: 639px) {
   .header .menu {
-    position: absolute;
-    top: 121px;
-    right: 0;
-    width: 80%;
+    padding-top: 40px;
+    position: fixed;
+    top: 120px;
+    right: -50vh;
+    transform: translate3d(100px, 0, 0);
+    opacity: 0;
+    transition-property: opacity, transform;
+    width: 90%;
+    height: calc(100vh - 120px);
     background-color: white;
+    transition: all 0.75s ease;
   }
   .header .menu.show {
     display: flex;
+    opacity: 1;
+    right: 0;
+    transform: translateZ(0);
   }
 }
 .header .menu-list {
@@ -350,9 +370,15 @@ p {
   justify-content: flex-end;
   gap: 0 60px;
 }
+@media only screen and (max-width: 1023px) {
+  .header .menu-list {
+    gap: 0 30px;
+    margin-right: 15px;
+  }
+}
 @media only screen and (max-width: 639px) {
   .header .menu-list {
-    flex-wrap: wrap;
+    display: block;
   }
 }
 .header .menu-list-item {
@@ -399,7 +425,7 @@ p {
   text-decoration: none;
   color: #054C73;
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1023px) {
   .logo {
     margin-left: 15px;
   }
@@ -410,7 +436,7 @@ p {
   top: 37px;
   right: 10px;
   z-index: 20;
-  width: 80px;
+  width: 60px;
   height: 40px;
   transition: all 0.5s ease;
   display: none;
@@ -436,10 +462,22 @@ p {
   position: absolute;
   background-color: #054C73;
   top: 0px;
+  transition: all 0.5s ease-in;
 }
 .burger-menu::before {
   top: auto;
   bottom: 0;
+}
+.burger-menu.opened .burger-menu_lines {
+  display: none;
+}
+.burger-menu.opened::after {
+  top: 21px;
+  transform: rotate(-135deg);
+}
+.burger-menu.opened::before {
+  top: 21px;
+  transform: rotate(135deg);
 }
 
 .hero_slider {
@@ -468,7 +506,7 @@ p {
   font-size: 18px;
   line-height: 39px;
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1023px) {
   .hero_slider_message {
     max-width: 95%;
     right: 2.5%;
@@ -484,8 +522,8 @@ p {
 }
 @media only screen and (max-width: 639px) {
   .hero_slider_title {
-    font-size: 42px;
-    line-height: 55px;
+    font-size: 33px;
+    line-height: 45px;
   }
 }
 
@@ -506,6 +544,8 @@ p {
 @media only screen and (max-width: 639px) {
   .benefit-item {
     width: 100%;
+    margin-bottom: 15px;
+    justify-content: flex-start;
   }
 }
 .benefit-content {
@@ -513,6 +553,11 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .benefit-content {
+    line-height: 16px;
+  }
 }
 .benefit-title {
   font-weight: 600;
@@ -535,6 +580,7 @@ p {
 @media only screen and (max-width: 639px) {
   .promo-gallery {
     flex-wrap: wrap;
+    gap: 40px 0;
   }
 }
 .promo-gallery .image-mask {
@@ -543,6 +589,7 @@ p {
 @media only screen and (max-width: 639px) {
   .promo-gallery .image-mask {
     flex: auto;
+    max-width: 95%;
   }
 }
 
@@ -563,6 +610,11 @@ p {
   height: 737px;
   max-width: 450px;
   margin: 0 10% 0 0;
+}
+@media only screen and (max-width: 1023px) {
+  .single-promo-img {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 639px) {
   .single-promo-img {
@@ -627,6 +679,26 @@ p {
   flex-direction: column;
   gap: 75px;
 }
+@media only screen and (max-width: 1023px) {
+  .hw-list-item {
+    width: 31%;
+  }
+  .hw-list-item img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .hw-list-item {
+    width: 100%;
+  }
+  .hw-list-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 639px) {
   .hw-list-item {
     flex: auto;
@@ -665,6 +737,11 @@ p {
   flex-direction: column;
   gap: 50px;
 }
+@media only screen and (max-width: 1023px) {
+  .mailing-container {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 639px) {
   .mailing-container {
     width: 95%;
@@ -680,7 +757,7 @@ p {
   right: 0;
   top: 0;
 }
-@media only screen and (max-width: 639px) {
+@media only screen and (max-width: 1023px) {
   .field-container .btn {
     position: relative;
     display: inline-block;
@@ -705,6 +782,11 @@ p {
   flex-direction: column;
   gap: 26px;
 }
+@media only screen and (max-width: 1023px) {
+  .footer .insta-shop {
+    flex: 1;
+  }
+}
 @media only screen and (max-width: 639px) {
   .footer .insta-shop {
     width: 100%;
@@ -714,6 +796,17 @@ p {
 .footer .insta-shop .insta-shop-items {
   display: flex;
   gap: 20px;
+}
+@media only screen and (max-width: 1023px) {
+  .footer .insta-shop .insta-shop-items {
+    flex-wrap: wrap;
+  }
+  .footer .insta-shop .insta-shop-items a {
+    flex: 1;
+  }
+  .footer .insta-shop .insta-shop-items a img {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 639px) {
   .footer .insta-shop .insta-shop-items {
@@ -787,6 +880,12 @@ p {
 .section {
   padding: 47px;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1023px) {
+  .section {
+    padding: 40px 20px;
+  }
 }
 .section.gray-bg {
   background-color: #F2F5FF;
@@ -801,6 +900,11 @@ p {
   font-size: 32px;
   line-height: 39px;
   color: #333333;
+}
+@media only screen and (max-width: 639px) {
+  .section-title {
+    font-size: 27px;
+  }
 }
 .section-subtitle {
   font-weight: 400;

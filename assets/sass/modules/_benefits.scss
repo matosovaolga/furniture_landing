@@ -13,15 +13,20 @@
 
 		@include mq('tablet-small') {
 			width: 100%;
+			margin-bottom: 15px;
+			justify-content: flex-start;
 		}
 	}
-
 
 	&-content {
 		color: $second-font-color;
 		font-weight: 400;
 		font-size: $main-font-size;
 		line-height: 20px;
+
+		@include mq('tablet-wide') {
+			line-height: 16px;
+		}
 	}
 
 	&-title {
@@ -30,5 +35,4 @@
 		line-height: 29px;
 		color: $second-font-color;
 	}
-
 }

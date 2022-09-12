@@ -1,7 +1,5 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-(function () {
 
+(function () {
 	document.getElementsByTagName('html')[0].scrollIntoView({ behavior: "smooth" });
 	let header = document.getElementById('header');
 	window.onscroll = () => {
@@ -12,14 +10,15 @@ import 'aos/dist/aos.css';
 		}
 	}
 
-	document.getElementById('humburger').onClick = function () {
-		openMenu();
-	};
-
-
 	function openMenu() {
+
 		document.getElementById("menu").classList.toggle("show");
+		document.getElementById("humburger").classList.toggle("opened");
 	}
+
+	document.getElementById("humburger").addEventListener('click', openMenu);
+
+
 
 	// scroll animation
 
